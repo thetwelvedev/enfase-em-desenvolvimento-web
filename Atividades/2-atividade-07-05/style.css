@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(15, 139, 180);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+nav{
+    background-color: white;
+    padding: 18px ; /*Adiociona o espaço dentro do elemento*/
+    text-align: right;
+}
+
+nav ul{
+    list-style-type: none; /*Tira os marcadores de lista*/
+    margin: 0; /*Adiociona o espaço fora do elemento*/
+    padding: 0;
+    display: flex; /* Transforma a lista em container flex */
+    justify-content: center; /* Os elementos da lista vão ficar alinhados horizontalmente*/
+}
+
+nav li{
+    margin: 0 5px; /* Superior e Inferior = 0  e Direita e Esquerda = 5px*/
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 5px;
+    border-radius: 4px; /*Faz o arredondamento dos cantos*/
+    transition: background-color 0.3s;
+}
+
+nav a:hover{ /*Ativa a propriedade dada a ela quando passar o cursor do mouse*/
+    background-color: lightgrey;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+}

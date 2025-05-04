@@ -81,7 +81,7 @@ li {
 }
 
 footer{
-    background-color: grey;
+    background-color: white;
     padding: 20px ; /*Adiociona o espaço dentro do elemento*/
 }
 
@@ -123,4 +123,23 @@ footer img {
 
 footer a:hover{ /*Ativa a propriedade dada a ela quando passar o cursor do mouse*/
     background-color: darkgrey;
+}
+
+button{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black; /*Cor da letra*/
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: lightgray;
+    transform: translateY(-2px); /*Movimentação do botão*/
+}
+
+button:active {
+    transform: translateY(0);
 }

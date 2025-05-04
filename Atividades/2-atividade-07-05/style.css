@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth; /*Vai suavizar a rolagem*/
+}
+
 body{ /*Seletores*/
     background-color: rgb(15, 139, 180);
     font-family: Arial, Helvetica, sans-serif;
@@ -78,7 +82,14 @@ li {
 
 footer{
     background-color: grey;
-    padding: 30px ; /*Adiociona o espaço dentro do elemento*/
+    padding: 20px ; /*Adiociona o espaço dentro do elemento*/
+}
+
+footer p{
+    justify-content: center;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 footer ul{

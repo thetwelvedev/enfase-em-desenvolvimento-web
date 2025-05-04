@@ -6,6 +6,7 @@ body{ /*Seletores*/
     background-color: rgb(15, 139, 180);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    transition: 0.5s; /*Para quando tiver mudando de modo*/
 }
 nav{
     background-color: white;
@@ -48,6 +49,12 @@ img{
     border-radius: 50%;
     width: 15%;
     height: 15%;
+    transform: scale(1);/*Setando a escola*/
+    transition: transform 0.5s linear; /*Como ocorre a animação*/
+}
+
+img:hover{
+    transform: scale(1.2);
 }
 
 h1{
@@ -128,18 +135,114 @@ footer a:hover{ /*Ativa a propriedade dada a ela quando passar o cursor do mouse
 button{
     padding: 5px 10px;
     margin-bottom: 10px;
-    background-color: white;
-    color: black; /*Cor da letra*/
+    background-color: black;
+    color: white; /*Cor da letra*/
+    border: none;
     border-radius: 20px;
     font-size: 14px;
     cursor: pointer;
 }
 
 button:hover{
-    background-color: lightgray;
+    background-color: rgb(34, 34, 34);
     transform: translateY(-2px); /*Movimentação do botão*/
 }
 
 button:active {
     transform: translateY(0);
+}
+
+/*Configurações da Div do modo dark e modo light*/
+.trilho{
+    width: 32px;
+    height: 18px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.trilho .indicador{
+    width: 18px;
+    height: 18px; 
+    background-color: grey;
+    border-radius: 50px;
+    transform: scale(0.9); /*Vai deixar o indicador menor tendo um borda em relação ao trilho*/
+    position: relative;
+    left: 0; /*Posiçaõ base do indicador*/
+    transition: .5s; /*Tempo de movimentação do indicador*/
+}
+
+.trilho.dark{
+    background-color: grey;
+}
+.trilho.dark .indicador{
+    left: 14px; /*Deslocamento do indicador*/
+    background-color: black;
+}
+
+body.dark{
+    background-color: black;
+}
+
+body.dark h1{
+    color: lightgrey;
+}
+
+body.dark h2{
+    color: lightgrey;
+}
+
+body.dark h3{
+    color: lightgrey;
+}
+
+body.dark p{
+    color: lightgrey;
+}
+
+body.dark li{
+    color: lightgrey;
+}
+
+nav.dark{
+    background-color: rgb(105, 105, 105);
+}
+
+nav.dark li{
+    color: white;
+}
+
+nav.dark a{
+    color: white;
+}
+
+nav.dark a:hover{ /*Ativa a propriedade dada a ela quando passar o cursor do mouse*/
+    background-color: grey;
+}
+
+footer.dark {
+    background-color: rgb(105, 105, 105);
+}
+footer.dark a{
+    color: white;
+}
+
+footer.dark a:hover{ /*Ativa a propriedade dada a ela quando passar o cursor do mouse*/
+    background-color: grey;
+}
+
+button.dark {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black; /*Cor da letra*/
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button.dark:hover{
+    background-color: lightgray;
+    transform: translateY(-2px); /*Movimentação do botão*/
 }

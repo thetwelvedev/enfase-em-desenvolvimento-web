@@ -1,4 +1,4 @@
-body{
+body{ /*Seletores*/
     background-color: rgb(15, 139, 180);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -22,7 +22,7 @@ nav li:first-child{ /*Apenas o primeiro item da lista não ordenada vai ter essa
 }
 
 nav li{
-    margin: 0 1px; /* Superior e Inferior = 0  e Direita e Esquerda = 5px*/
+    margin: 0 1px; /*Superior e Inferior = 0  e Direita e Esquerda = 5px*/
 }
 
 nav a{
@@ -54,7 +54,62 @@ h2{
     font-size: 20px;
 }
 
+h3{
+    display: flex;
+    justify-content: left;
+    font-size: 16px;
+}
+
+p{ 
+    display: flex;
+    justify-content: left;
+    text-align: justify; /*Deixa o texto justificado*/
+    font-size: 14px;
+}
+
+ul{
+    text-align: left; /*Alinhou o texto a direita*/
+}
+
+li {
+    display: list-item; /*Garante que cada li fique em sua própria linha */
+    font-size: 14px;
+}
+
 footer{
     background-color: grey;
     padding: 30px ; /*Adiociona o espaço dentro do elemento*/
+}
+
+footer ul{
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+    display: flex; 
+    justify-content:center; 
+}
+
+footer li{
+    margin: 0 1px; /*Superior e Inferior = 0  e Direita e Esquerda = 5px*/
+    justify-content:first baseline; 
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 5px 5px;
+    border-radius: 4px; /*Faz o arredondamento dos cantos*/
+    transition: background-color 0.3s;
+}
+footer img {
+    width: 20px; 
+    height: 20px; 
+    display: inline-block; /* Permite que a imagem fique ao lado do texto */
+    vertical-align: middle; /*Alinha a imagem verticalmente com o texto */
+    margin-right: 2px; /*Espaçamento da imagem em relação ao texto qeu está a direita*/
+}
+
+footer a:hover{ /*Ativa a propriedade dada a ela quando passar o cursor do mouse*/
+    background-color: darkgrey;
 }

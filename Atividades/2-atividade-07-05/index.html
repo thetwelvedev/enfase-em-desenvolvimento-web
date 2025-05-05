@@ -22,7 +22,7 @@
         </ul>
     </nav>
     <br>
-    <img src="images/perfil.jpg" alt="Foto de frente" >
+    <img id="perfil" src="images/perfil.jpg" alt="Foto de frente" >
     <h1>Leonardo Castro</h1>
     
     <h2 id="sobre-mim">Sobre mim</h2>
@@ -53,8 +53,12 @@
     </ul>
     
     <h2 id="curriculo">Currículo</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellat voluptatum magni voluptatem, distinctio tempore libero consectetur eaque harum blanditiis, totam aliquid nisi reprehenderit vitae necessitatibus? Eos magni natus consequatur.</p>
-    <button id="faleComigo">Fale comigo</button>
+    <div class="curriculo-container">
+        <button class="btn-download" onclick="window.open('docs/currículo.pdf')">
+            Baixar Currículo
+            <img src="/images/download.png" alt="Símbolo de Download">
+        </button>
+    </div>
     <footer id="contatos"> <!-- Barra Inferior -->
         <p>Contatos</p>
        <ul>
@@ -63,19 +67,8 @@
         <li><img src="/images/logo-instagram.png" alt="Logo do Instagram"><a href="https://www.instagram.com/__lv12__/" target="_blank">Instagram</a></li>
         <li><img src="/images/logo-email.png" alt="Logo do Gmail"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=twelve.programming@gmail.com&su=Informações sobre sua Carreira Acadêmica&body=Olá Leonardo Castro,%0A%0AMeu nome é [Seu Nome] e estou interessado em saber mais sobre sua carreira acadêmica. Você poderia me passar algumas informações?%0A%0AAgradeço pela atenção!%0A%0AAtenciosamente,%0A[Seu Nome]" target="_blank">Gmail</a></li>
        </ul>
+       <button id="faleComigo">Fale comigo</button>
     </footer>
     <script src="script.js"></script> <!--Conecta o html ao js-->
 </body>
 </html>
-
-<!--
-Feito:
-- Quem é você
-- Hobbies
-- Um botão "Fale comigo" que exibe um alert com o email.
-- Adicione animações CSS simples (ex: transição ao passar o mouse).
-- Crie estilos diferentes para o modo "dia" e "noite" (alteração com JavaScript).
-
-Falta:
-- Currículo
--->

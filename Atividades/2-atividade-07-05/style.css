@@ -43,7 +43,7 @@ nav a:hover{ /*Ativa a propriedade dada a ela quando passar o cursor do mouse*/
     background-color: lightgrey;
 }
 
-img{
+#perfil{
     display: block;
     margin: 0 auto;
     border-radius: 50%;
@@ -53,7 +53,7 @@ img{
     transition: transform 0.5s linear; /*Como ocorre a animação*/
 }
 
-img:hover{
+#perfil:hover{
     transform: scale(1.2);
 }
 
@@ -125,7 +125,7 @@ footer img {
     height: 20px; 
     display: inline-block; /* Permite que a imagem fique ao lado do texto */
     vertical-align: middle; /*Alinha a imagem verticalmente com o texto */
-    margin-right: 2px; /*Espaçamento da imagem em relação ao texto qeu está a direita*/
+    margin-right: 2px; /*Espaçamento da imagem em relação ao texto que está a direita*/
 }
 
 footer a:hover{ /*Ativa a propriedade dada a ela quando passar o cursor do mouse*/
@@ -133,8 +133,9 @@ footer a:hover{ /*Ativa a propriedade dada a ela quando passar o cursor do mouse
 }
 
 button{
-    padding: 5px 10px;
-    margin-bottom: 10px;
+    padding: 5px 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
     background-color: black;
     color: white; /*Cor da letra*/
     border: none;
@@ -150,6 +151,19 @@ button:hover{
 
 button:active {
     transform: translateY(0);
+}
+
+.btn-download{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.btn-download img{
+    width: 20px; 
+    height: 20px; 
+    display: inline-block; /* Permite que a imagem fique ao lado do texto */
+    vertical-align: middle; /*Alinha a imagem verticalmente com o texto */
+    margin-left: 2px; /*Espaçamento da imagem em relação ao texto que está a esquerda*/
 }
 
 /*Configurações da Div do modo dark e modo light*/

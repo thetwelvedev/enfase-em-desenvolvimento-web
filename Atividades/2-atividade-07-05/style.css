@@ -8,6 +8,8 @@ body{ /*Seletores*/
     text-align: center;
     transition: 0.5s; /*Para quando tiver mudando de modo*/
 }
+
+/* NAVBAR*/
 nav{
     background-color: white;
     padding: 10px ; /*Adiociona o espaço dentro do elemento*/
@@ -52,7 +54,7 @@ nav a:hover{ /*Ativa a propriedade dada a ela quando passar o cursor do mouse*/
     transform: scale(1);/*Setando a escola*/
     transition: transform 0.5s linear; /*Como ocorre a animação*/
 }
-
+/* IMAGEM - SOBRE MIM - HOBBIES - CURRÍCULO*/
 #perfil:hover{
     transform: scale(1.2);
 }
@@ -87,6 +89,38 @@ li {
     font-size: 14px;
 }
 
+button{
+    padding: 5px 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    background-color: black;
+    color: white; /*Cor da letra*/
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(34, 34, 34);
+    transform: translateY(-2px); /*Movimentação do botão*/
+}
+
+.btn-download{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.btn-download img{
+    width: 20px; 
+    height: 20px; 
+    display: inline-block; /* Permite que a imagem fique ao lado do texto */
+    vertical-align: middle; /*Alinha a imagem verticalmente com o texto */
+    margin-left: 2px; /*Espaçamento da imagem em relação ao texto que está a esquerda*/
+}
+
+
+/* FOOTER*/
 footer{
     background-color: white;
     padding: 20px ; /*Adiociona o espaço dentro do elemento*/
@@ -132,7 +166,7 @@ footer a:hover{ /*Ativa a propriedade dada a ela quando passar o cursor do mouse
     background-color: darkgrey;
 }
 
-button{
+footer button{
     padding: 5px 5px;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -144,26 +178,9 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+footer button:hover{
     background-color: rgb(34, 34, 34);
     transform: translateY(-2px); /*Movimentação do botão*/
-}
-
-button:active {
-    transform: translateY(0);
-}
-
-.btn-download{
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-.btn-download img{
-    width: 20px; 
-    height: 20px; 
-    display: inline-block; /* Permite que a imagem fique ao lado do texto */
-    vertical-align: middle; /*Alinha a imagem verticalmente com o texto */
-    margin-left: 2px; /*Espaçamento da imagem em relação ao texto que está a esquerda*/
 }
 
 /*Configurações da Div do modo dark e modo light*/
@@ -234,17 +251,6 @@ nav.dark a:hover{ /*Ativa a propriedade dada a ela quando passar o cursor do mou
     background-color: grey;
 }
 
-footer.dark {
-    background-color: rgb(105, 105, 105);
-}
-footer.dark a{
-    color: white;
-}
-
-footer.dark a:hover{ /*Ativa a propriedade dada a ela quando passar o cursor do mouse*/
-    background-color: grey;
-}
-
 button.dark {
     padding: 5px 10px;
     margin-bottom: 10px;
@@ -259,4 +265,44 @@ button.dark {
 button.dark:hover{
     background-color: lightgray;
     transform: translateY(-2px); /*Movimentação do botão*/
+}
+
+.btn-download.dark{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.btn-download.dark img{
+    width: 20px; 
+    height: 20px; 
+    display: inline-block; /* Permite que a imagem fique ao lado do texto */
+    vertical-align: middle; /*Alinha a imagem verticalmente com o texto */
+    margin-left: 2px; /*Espaçamento da imagem em relação ao texto que está a esquerda*/
+}
+
+footer.dark button {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: black; /*Cor da letra*/
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+footer.dark button:hover{
+    background-color: lightgray;
+    transform: translateY(-2px); /*Movimentação do botão*/
+}
+
+footer.dark {
+    background-color: rgb(105, 105, 105);
+}
+footer.dark a{
+    color: white;
+}
+
+footer.dark a:hover{ /*Ativa a propriedade dada a ela quando passar o cursor do mouse*/
+    background-color: grey;
 }
